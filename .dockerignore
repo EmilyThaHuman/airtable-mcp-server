@@ -1,0 +1,11 @@
+node_modules
+dist
+assets
+.vite
+.wrangler
+.git
+.env
+.env.local
+*.log
+.DS_Store
+

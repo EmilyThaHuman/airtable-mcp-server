@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "@openai/apps-sdk-ui/css";
+@source "../node_modules/@openai/apps-sdk-ui";
+
+/* Define dark mode variant for Tailwind v4 */
+@custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+  .overflow-auto > *,
+  .overflow-scroll > *,
+  .overflow-x-auto > *,
+  .overflow-y-auto > * {
+    scrollbar-color: auto;
+  }
+
+  /* Base style for scrollable elements */
+  .overflow-auto,
+  .overflow-scroll,
+  .overflow-x-auto,
+  .overflow-y-auto,
+  .overflow-x-scroll,
+  .overflow-y-scroll {
+    scrollbar-color: rgb(0, 0, 0, 0.1) transparent;
+
+    @media (prefers-color-scheme: dark) {
+      scrollbar-color: rgb(255, 255, 255, 0.1) transparent;
+    }
+  }
+
+  /* Hover state directly on the scrollable element */
+  .overflow-auto:hover,
+  .overflow-scroll:hover,
+  .overflow-x-auto:hover,
+  .overflow-y-auto:hover {
+    scrollbar-color: rgb(0, 0, 0, 0.2) transparent;
+
+    @media (prefers-color-scheme: dark) {
+      scrollbar-color: rgb(255, 255, 255, 0.2) transparent;
+    }
+  }
+}
+
+/* Fix input and textarea padding and placeholder colors */
+@layer components {
+  /* Add proper left padding to inputs and textareas */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* Fix placeholder text color for light and dark modes */
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(156, 163, 175) !important; /* gray-400 for light mode */
+    opacity: 1 !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    input::placeholder,
+    textarea::placeholder {
+      color: rgb(107, 114, 128) !important; /* gray-500 for dark mode */
+      opacity: 1 !important;
+    }
+  }
+
+  /* Ensure input and textarea text color is correct */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    color: rgb(17, 24, 39) !important; /* gray-900 for light mode */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    textarea {
+      color: rgb(243, 244, 246) !important; /* gray-100 for dark mode */
+    }
+  }
+}
+
