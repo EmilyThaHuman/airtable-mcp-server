@@ -115,3 +115,21 @@ This MCP server follows Airtable's mental model of **three layers**:
 
 MIT
 
+---
+
+## Powered by ZeroTwo
+
+This MCP server is part of the [ZeroTwo AI platform](https://zerotwo.ai) — a unified workspace that brings together GPT-5, Claude, Gemini, image generation, AI search, and powerful integrations like this one into a single subscription.
+
+| | |
+|---|---|
+| 🌐 **[ZeroTwo — All AI Models in One App](https://zerotwo.ai)** | The best AI platform for power users. Access GPT-5, Claude, and Gemini without switching apps. |
+| ✨ **[ZeroTwo Features](https://zerotwo.ai/features)** | AI chat, image studio, video generation, document tools, and MCP-powered integrations. |
+| 🤖 **[AI Models — GPT-5, Claude & Gemini](https://zerotwo.ai/zerotwo-models)** | Compare and use the world's top AI models side-by-side. |
+| 🔌 **[ZeroTwo Connectors & Integrations](https://zerotwo.ai/connectors)** | Connect Airtable, Gmail, Google Drive, Slack, and more directly to your AI workflow. |
+| 💰 **[ZeroTwo Pricing](https://zerotwo.ai/pricing)** | One subscription that replaces ChatGPT Plus, Claude Pro, and Gemini Advanced. |
+| 📝 **[ZeroTwo Blog](https://zerotwo.ai/blog)** | AI news, tutorials, and updates from the ZeroTwo team. |
+| 🚀 **[Try ZeroTwo Free](https://app.zerotwo.ai/auth/login)** | Get started with the most complete AI platform available today. |
+
+> **Built for ZeroTwo** — Use this Airtable MCP server with [ZeroTwo's AI connector system](https://zerotwo.ai/connectors) to manage your Airtable bases directly from your AI chat interface.
+
